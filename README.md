@@ -11,7 +11,7 @@ Within your newly made project run
 npm init -y --init-type=module
 ```
 This will create package.json & package-lock.json
-
+---
 
 #### Step Two: 
 Create a directory called src and then a file named index.js within the src folder
@@ -19,7 +19,7 @@ Create a directory called src and then a file named index.js within the src fold
 mkdir src && touch src/index.js
 ```
 The index.js file is the root of all our javascript
-
+---
 
 #### Step Three: 
 In the root of the project so outside of src, create a file called webpack.config.js
@@ -27,7 +27,7 @@ In the root of the project so outside of src, create a file called webpack.confi
 touch webpack.config.js
 ```
 This is the config file webpack uses for its configuration
-
+---
 
 #### Step Four:
 Within the webpack.config.js file copy and paste the following code:
