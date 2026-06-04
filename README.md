@@ -252,4 +252,57 @@ document.body.appendChild(image);
 
 ---
 
+## Setup Webpack Dev Server
+
+#### Step One:
+Run the following commpand in your project
+```batch
+npm install --save-dev webpack-dev-server\
+```
+
+---
+
+#### Step Two
+Add the following dev tool to your webpack.config.js file
+```javascript
+import path from "node:path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+
+export default {
+  mode: "development",
+  entry: "./src/index.js",
+  output: {
+    filename: "main.js",
+    path: path.resolve(import.meta.dirname, "dist"),
+    clean: true,
+  },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/template.html",
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/i,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
+  },
+};
+```
+
+
 If this wasn't helpful check out https://www.theodinproject.com/lessons/javascript-webpack that is a more in-depth guide.
