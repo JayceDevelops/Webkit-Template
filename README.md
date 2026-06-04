@@ -5,10 +5,12 @@
 -------------------------------------
 
 #### Step One:
-Within your newly made project run the following command
+Within your newly made project run the two following commands in 
 This will create package.json & package-lock.json
 ```batch
 npm init -y --init-type=module
+
+npm install --save-dev webpack webpack-cli
 ```
 
 ---
@@ -48,6 +50,7 @@ export default {
 ```
 
 ---
+
 
 ## Setting Up Webpack For HTML
 -------------------------------------
