@@ -198,7 +198,7 @@ export default {
 
 #### Step Three:
 Next we need to add another rule to our modules so javascript knows what to do when we import a image
-```javasctipt
+```javascript
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
