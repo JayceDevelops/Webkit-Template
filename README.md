@@ -14,8 +14,8 @@ npm init -y --init-type=module
 ---
 
 #### Step Two: 
-Create a directory called src and then a file named index.js within the src folder
-The index.js file is the root of all our javascript
+Create a directory called src and then a file named index.js within the src folder.
+The index.js file is the root of all our javascript.
 ```batch
 mkdir src && touch src/index.js
 ```
@@ -23,8 +23,8 @@ mkdir src && touch src/index.js
 ---
 
 #### Step Three: 
-In the root of the project so outside of src, create a file called webpack.config.js
-This is the config file webpack uses for its configuration
+In the root of the project so outside of src, create a file called webpack.config.js.
+This is the config file webpack uses for its configuration.
 ```batch
 touch webpack.config.js
 ```
