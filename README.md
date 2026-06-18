@@ -257,7 +257,7 @@ document.body.appendChild(image);
 #### Step One:
 Run the following commpand in your project
 ```batch
-npm install --save-dev webpack-dev-server\
+npm install --save-dev webpack-dev-server
 ```
 
 ---
